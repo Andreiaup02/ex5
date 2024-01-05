@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("../fonts/static/RobotoFlex-Regular.ttf");
+}
+body {
+  background: rgb(170, 233, 157);
+  background: linear-gradient(
+    0deg,
+    rgba(170, 233, 157, 1) 0%,
+    rgba(224, 252, 224, 1) 100%
+  );
+  font-family: "Roboto Flex", "Times New Roman", Times, serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(227, 100, 100);
+}
+nav {
+  text-align: center;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  background: white;
+  padding: 10px 50px;
+  margin: 0 auto;
+}
+
+figure {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set a specific height for the figure */
+  background-image: url(../images/foto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#nome {
+  position: absolute;
+  bottom: 100px;
+  font-weight: 600;
+  font-size: 100pt;
+  color: #fff;
+  margin-bottom: 70vh;
+  text-shadow: 2px 2px rgb(74, 155, 57);
+}
+
+main {
+  margin: auto;
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 50px;
+  row-gap: 50px;
+  max-width: 80%;
+  background-color: rgba(255, 255, 255, 0.491);
+  padding: 20px;
+}
+
+.exercicio {
+  margin: 0 40px;
+}
+
+.titulo {
+  font-size: 40px;
+}
+
+.resumo {
+  font-size: 20px;
+}
+
+.exercicio:hover {
+  background: rgba(255, 255, 255, 0.758);
+  margin: 5px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  #nome {
+    position: absolute;
+    top: 100px;
+    font-weight: 600;
+    font-size: 60pt;
+  }
+}
